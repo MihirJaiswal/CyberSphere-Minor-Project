@@ -176,7 +176,7 @@ function Hero() {
           <div className="title" > 
           <h2>Paste The Link of the website</h2>
           <div>
-            <input type="text w-full p-2 rounded outline-none border border-gray-300 focus:border-blue-500" />
+            <input type="text rounded outline-none border border-gray-300 focus:border-blue-500 mt-12" />
           </div>
           </div>
         </div>
