@@ -448,8 +448,8 @@ canvas {
   letter-spacing: 3px;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-text-stroke: 0.1vw #c2760b;
-  text-shadow: 3.5px 3.5px #443763;
+  -webkit-text-stroke: 0.1vw #c71a43;
+  text-shadow: 3.5px 3.5px #b3a7ce;
   font-size: 128px;
   margin: 0 auto;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;

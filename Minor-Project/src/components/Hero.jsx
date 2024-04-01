@@ -10,6 +10,7 @@ import ScrollTrigger from 'react-scroll-trigger';
 
 import Footer from "./Footer/Footer";
 import Header from "./Header/header";
+import Games from "./Games";
 
 import anime from "animejs";
 
@@ -156,13 +157,51 @@ function Hero() {
           </div>
         </div>
 
-       {/*  <div id="games" className="games">
-          <div className="games-details">
-            <h2>How much you know in cybersecurity?</h2>
-            <p>--Wanna test yourself?</p>
-            <p>--Play some Games with Us ---😍</p>
+       
+
+        <div className="flex justify-center flex-col items-center">
+          <div className="title" > 
+          <h2>Paste The Link of the website</h2>
+          <div className="flex justify-center items-center">
+          <div className="mt-6 flex">
+            <input type="text" className="w-full h-16 px-4 font-sans font-medium	text-black text-md color-gray-900 border border-solid border-2 border-red-500 focus:outline-none focus:ring-2 focus:ring-inset  outline-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+            <button className="btn w-28 h-16 bg-purple-800 border border-solid border-2 border-blue-700 text-white hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300">Check</button>
           </div>
-          <Link to="/games">
+          </div>
+          </div>
+          <div className="w-full mt-24">
+          <h1 className="text-xl text-center font-bold text-gray-900 dark:text-white underline">
+             * The website is phishing 
+            The website is not phising *
+          </h1>          
+          </div>
+          
+         
+        </div>
+
+        <div className="w-full h-24">
+          <div >
+            <div><button></button></div>
+            <div><button></button></div>
+            <div><button></button></div>
+          </div>
+        </div>
+
+       <div className="mt-8">
+       <div className="title mb-4">  
+            <h1 className="title">Games</h1>
+          </div>
+        <div className="flex">
+          <div className="w-1/2 text-center mb-12 mt-12 px-12">
+            <img src="https://preview.redd.it/05uhd2ihjs671.gif?width=1920&auto=webp&s=2cfe2e79dafaccd849f4d2b7f2622ea565c748af" alt="" className="img" />
+          </div>
+
+          <div className="w-1/2 text-center flex flex-col">
+            <div className=" text-center mb-12 mt-12 px-12">
+              <p className="text-2xl text-gray-200 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt quis ducimus dicta quod suscipit provident, debitis consequatur nemo consectetur commodi animi fugiat et explicabo possimus eius laudantium sint, nostrum fuga cum. Itaque aliquid ipsa sit repudiandae maiores distinctio, delectus laborum error saepe architecto, corrupti mollitia aliquam eaque nam vitae quos laudantium eius necessitatibus natus. Necessitatibus quasi earum enim aliquid!</p>
+            </div>
+            <div>
+            <Link to="/games">
             <button className="btn">
               <span className="btn__inner">
                 <span className="btn__slide"></span>
@@ -170,18 +209,16 @@ function Hero() {
               </span>
             </button>
           </Link>
-        </div> */}
-
-        <div className="mb-24">
-          <div className="title" > 
-          <h2>Paste The Link of the website</h2>
-          <div>
-            <input type="text rounded outline-none border border-gray-300 focus:border-blue-500 mt-12" />
-          </div>
+            </div>
           </div>
         </div>
+       </div>
+        
+          
+       
+        
 
-        <div id = "about" className="about mt-24">
+        <div id = "about" className="about">
           <div className="title">  
             <h1>About Us</h1>
           </div>
