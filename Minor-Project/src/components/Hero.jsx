@@ -159,16 +159,21 @@ function Hero() {
 
        
 
-        <div className="link-container flex justify-center flex-col items-center mb-10">
-          <div className="title" > 
-          <h2>Paste The Link of the website</h2>
-          <div className="flex justify-center items-center">
-          <div className="mt-4 flex">
-            <input type="text" className="w-full h-16 px-4 font-sans font-medium	text-black text-md color-gray-900 border border-solid border-2 border-gray-900 focus:outline-none focus:ring-2 focus:ring-inset  outline-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
-            <button className="btn w-28 h-16 bg-purple-800 border border-solid border-2 border-gray-800 text-white hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300">Check</button>
-          </div>
-          </div>
-          </div>
+        <div className="link-container flex justify-center flex-col items-center mb-8">
+         
+          <form className="w-full max-w-sm mx-auto">   
+      <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+      <div className="relative">
+        <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+        </div>
+        <input type="search" id="default-search" className="block w-full p-4 ps-10 text-l text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required />
+        <button type="submit" className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+      </div>
+    </form>
+          
           <div className="w-full mt-16">
           <h1 className="text-xl text-center font-bold text-gray-900 dark:text-white underline">
             {/*  * The website is phishing 
@@ -179,16 +184,16 @@ function Hero() {
          
         </div>
 
-        <div className="w-full h-24">
+       {/*  <div className="w-full h-24">
           <div >
             <div><button></button></div>
             <div><button></button></div>
             <div><button></button></div>
           </div>
-        </div>
+        </div> */}
 
-       <div className="mt-8">
-       <div className="title mb-4">  
+       <div>
+       <div className="title mb-2">  
             <h1 className="title">Games</h1>
           </div>
         <div className="flex">
@@ -219,7 +224,7 @@ function Hero() {
         
 
         <div id = "about" className="about">
-          <div className="title">  
+          <div className="">  
             <h1>Team</h1>
           </div>
           <div className="about-container">

@@ -18,7 +18,7 @@ const Header = ({ updateColor }) => {
             <Link to="/">HOME</Link>
           </li>
           <li>
-            <Link to="/event">Events</Link>
+            <Link to="/event">Tools</Link>
           </li>
           <li>
           
@@ -26,7 +26,7 @@ const Header = ({ updateColor }) => {
           </li>
     
           <li>
-            <HashLink to="/#about">About</HashLink>
+            <HashLink to="/#about">Team</HashLink>
           </li>
 
           
