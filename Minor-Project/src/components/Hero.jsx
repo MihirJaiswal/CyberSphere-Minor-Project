@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
+import Team from "./Team/Team"
 
 import Footer from "./Footer/Footer";
 import Header from "./Header/header";
@@ -159,9 +160,13 @@ function Hero() {
 
        
 
-        <div className="link-container flex justify-center flex-col items-center mb-8">
-         
-          <form className="w-full max-w-sm mx-auto">   
+        <div className="link-container flex justify-center flex-col items-center mb-4">
+         <div className="title1">
+         <h1 className="title1 text-center text-4xl mb-10">
+         You can run a test on the link below
+         </h1>
+         </div>
+          <form className="w-full max-w-xl mx-auto">   
       <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
       <div className="relative">
         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -169,8 +174,8 @@ function Hero() {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
           </svg>
         </div>
-        <input type="search" id="default-search" className="block w-full p-4 ps-10 text-l text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required />
-        <button type="submit" className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+        <input type="search" id="default-search" className="block w-full p-4 ps-10 text-l text-gray-900 border border-gray-600 rounded-lg bg-white-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-gray-900" placeholder="Enter the link" required />
+        <button type="submit" className="text-white absolute end-2.5 bottom-2.5 bg-red-500 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-blue-800">Check</button>
       </div>
     </form>
           
@@ -224,17 +229,7 @@ function Hero() {
         
 
         <div id = "about" className="about">
-          <div className="">  
-            <h1>Team</h1>
-          </div>
-          <div className="about-container">
-            <div className="about-box">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat hic, exercitationem fuga recusandae autem dolores necessitatibus provident quibusdam amet beatae voluptate porro suscipit inventore asperiores doloribus nulla facilis vel eos nisi accusamus odit veritatis sint temporibus? Officia doloremque maxime ad numquam voluptatum accusamus accusantium quod vero distinctio omnis, pariatur dolorem eligendi sint commodi ratione autem illum harum perspiciatis ullam molestiae laudantium aliquid natus! Ut iure odio suscipit nulla, atque veritatis, autem tenetur nobis esse exercitationem quaerat quas rerum modi quam alias iusto, aut velit commodi doloribus quibusdam ipsum voluptate.</p>
-            </div>
-            <div className="about-img">
-              <img src="/public/ContentPhoto.png"/>
-            </div>
-          </div>
+         <Team/>
         </div>
 
         <div className="faq-container">
