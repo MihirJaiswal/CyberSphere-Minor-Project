@@ -13,11 +13,21 @@ import Footer from "./Footer/Footer";
 import Header from "./Header/header";
 import Games from "./Games";
 import img from "../assets/mihir.jpeg"
+import img1 from "../assets/kuldeep.jpg"
+import img2 from "../assets/krishna.jpeg"
+import img3 from "../assets/manish.jpg"
 
 import anime from "animejs";
 
 
 function Hero() {
+
+  const images = {
+    img,
+    img1,
+    img2,
+    img3
+  }
   const [color, setColor] = useState("purple");
   // const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -230,7 +240,7 @@ function Hero() {
         
 
         <div id = "about" className="about">
-         <Team img={img}/>
+         <Team images={images}/>
         </div>
 
         <div className="faq-container">
