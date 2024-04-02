@@ -834,3 +834,22 @@ canvas {
 .title1{
   font-family: orbitron;
 }
+
+.subtn{
+  background-color: #de39d6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100px;
+  height: 50px;
+  margin-top: 3px;
+  margin-right: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.icn{
+  color: #b2abab;
+}
