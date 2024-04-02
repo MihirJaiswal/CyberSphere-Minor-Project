@@ -811,3 +811,22 @@ canvas {
     gap: 90px;
   }
 }
+
+.link-container{
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  /* background-color: #090979;  */
+  background: rgb(6, 35, 182);
+  background: radial-gradient(
+    circle,
+    #531FA0 10%,
+    rgba(0, 11, 96, 1) 57%,
+    rgba(37, 2, 64, 1) 94%
+  );
+  width: 100%;
+}

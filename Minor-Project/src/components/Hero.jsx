@@ -159,20 +159,20 @@ function Hero() {
 
        
 
-        <div className="flex justify-center flex-col items-center">
+        <div className="link-container flex justify-center flex-col items-center mb-10">
           <div className="title" > 
           <h2>Paste The Link of the website</h2>
           <div className="flex justify-center items-center">
-          <div className="mt-6 flex">
-            <input type="text" className="w-full h-16 px-4 font-sans font-medium	text-black text-md color-gray-900 border border-solid border-2 border-red-500 focus:outline-none focus:ring-2 focus:ring-inset  outline-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
-            <button className="btn w-28 h-16 bg-purple-800 border border-solid border-2 border-blue-700 text-white hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300">Check</button>
+          <div className="mt-4 flex">
+            <input type="text" className="w-full h-16 px-4 font-sans font-medium	text-black text-md color-gray-900 border border-solid border-2 border-gray-900 focus:outline-none focus:ring-2 focus:ring-inset  outline-none border border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+            <button className="btn w-28 h-16 bg-purple-800 border border-solid border-2 border-gray-800 text-white hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300">Check</button>
           </div>
           </div>
           </div>
-          <div className="w-full mt-24">
+          <div className="w-full mt-16">
           <h1 className="text-xl text-center font-bold text-gray-900 dark:text-white underline">
-             * The website is phishing 
-            The website is not phising *
+            {/*  * The website is phishing 
+            The website is not phising * */}
           </h1>          
           </div>
           
@@ -220,7 +220,7 @@ function Hero() {
 
         <div id = "about" className="about">
           <div className="title">  
-            <h1>About Us</h1>
+            <h1>Team</h1>
           </div>
           <div className="about-container">
             <div className="about-box">
