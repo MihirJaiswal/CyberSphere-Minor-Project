@@ -25,7 +25,7 @@
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(191, 178, 178, 0.2);
     border-radius: 15px;
-    border-color: #949191;
+    border-color: #fffafa;
     border: solid 1px;
     display: flex;
     justify-content: center;
@@ -43,6 +43,7 @@
     flex-direction: column;
     opacity: 0.5;
     transition: 0.5s;
+    color: #fff;
 }
 .container .card-1:hover .content
 {
