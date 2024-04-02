@@ -173,7 +173,7 @@ function Hero() {
 
         <div className="link-container flex justify-center flex-col items-center mb-4">
          <div className="title1">
-         <h1 className="title1 text-center text-4xl mb-10 font-bold">
+         <h1 className="title1 text-center text-xl md:text-4xl mb-10 font-bold">
          You can run a test on the link below
          </h1>
          </div>
@@ -209,23 +209,20 @@ function Hero() {
         </div> */}
 
        <div>
-       <div className="title mb-2">  
-            <h1 className="title">Games</h1>
-          </div>
-        <div className="flex">
-          <div className="w-1/2 text-center mb-12 mt-12 px-12">
+        <div className="flex flex-wrap flex-col md:flex-row">
+          <div className="md:w-1/2 text-center mb-12 mt-12 px-4 md:px-12">
             <img src="https://preview.redd.it/05uhd2ihjs671.gif?width=1920&auto=webp&s=2cfe2e79dafaccd849f4d2b7f2622ea565c748af" alt="" className="img" />
           </div>
 
-          <div className="w-1/2 text-center flex flex-col">
-            <div className=" text-center mb-12 mt-12 px-12">
-              <p className="text-2xl text-gray-200 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt quis ducimus dicta quod suscipit provident, debitis consequatur nemo consectetur commodi animi fugiat et explicabo possimus eius laudantium sint, nostrum fuga cum. Itaque aliquid ipsa sit repudiandae maiores distinctio, delectus laborum error saepe architecto, corrupti mollitia aliquam eaque nam vitae quos laudantium eius necessitatibus natus. Necessitatibus quasi earum enim aliquid!</p>
+          <div className="w-full md:w-1/2 text-center flex flex-col">
+            <div className=" text-center mb-12 mt-2 md:mt-12 px-6 py-4 md:py-0 md:px-12 border border-gray-600 rounded-lg md:border-0">
+              <p className="text-l md:text-xl text-gray-200 ">At our platform, we're dedicated to raising awareness about phishing attacks and other cybersecurity threats. Through engaging games and quizzes, we provide an interactive learning experience where users can understand the tactics used by cybercriminals and learn how to protect themselves online. Click below to start your cybersecurity journey with our quizzes!</p>
             </div>
             <div>
             <Link to="/games">
             <button className="btn">
               <span className="btn__inner">
-                <span className="btn__slide"></span>
+                <span className="btn__slide" style={{ backgroundColor: "#E924EF" }}></span>
                 <span className="btn__content">Click Here</span>
               </span>
             </button>
