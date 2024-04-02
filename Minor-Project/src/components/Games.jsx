@@ -39,10 +39,10 @@ function Game() {
             <img className="img-2" alt="Player" src={img2} />
 
             <h1 className="texts  text-wrapper-10">QUIZ FOR GEEKS</h1>
-            <h1 className="t text-wrapper-11">CYBERCELL</h1>
+            <h1 className="t text-wrapper-11">CyberSphere</h1>
 
             <div className="play">
-              <a href="https://cybercellgu.github.io/quiz">
+              <a href="">
                 <button className="btn">
                   <span className="btn__inner">
                     <span className="btn__slide"></span>
@@ -62,7 +62,7 @@ function Game() {
             <h1 className="t text-wrapper-11">CYBERCELL</h1>
 
             <div className="play">
-              <a href="https://cybercellgu.github.io/Word_scramble/">
+              <a href="">
                 <button className="btn">
                   <span className="btn__inner">
                     <span className="btn__slide"></span>
