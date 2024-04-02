@@ -2,15 +2,15 @@ import React from 'react'
 import "./Team.css";
 
 
-function Team() {
+function Team(props){
   return (
     <div>
-       <section>
-            <h2>Team</h2>
+       <section className='mt-6'>
+            <h2 className='text-center text-5xl'>Meet Our Team</h2>
             <div className="container">
                 <div className="card card-1">
                     <div className="content">
-                        <div className="imgBx"><img src="#" alt="User" /></div>
+                        <div className="imgBx"><img src={props.img} alt="User" /></div>
                         <div className="contentBx">
                             <h3>Mihir Jaiswal<br /><span>Frontend and intregation</span></h3>
                         </div>
@@ -29,7 +29,7 @@ function Team() {
                 </div>
                 <div className="card card-1">
                     <div className="content">
-                        <div className="imgBx"><img src="images/user.jpg" alt="User" /></div>
+                        <div className="imgBx"><img src={props.img} alt="User" /></div>
                         <div className="contentBx">
                             <h3 className='font-white'>Kuldeep Verma<br /><span>Machine Learning</span></h3>
                         </div>
@@ -48,9 +48,9 @@ function Team() {
                 </div>
                 <div className="card card-1">
                     <div className="content">
-                        <div className="imgBx"><img src="images/user.jpg" alt="User" /></div>
+                        <div className="imgBx"><img src={props.img} alt="User" /></div>
                         <div className="contentBx">
-                            <h3>Name<br /><span>Position</span></h3>
+                            <h3>Krishna Vasuniya<br /><span>UI/UX designer</span></h3>
                         </div>
                     </div>
                     <ul className="sci">
@@ -67,9 +67,9 @@ function Team() {
                 </div>
                 <div className="card card-1">
                     <div className="content">
-                        <div className="imgBx"><img src="images/user.jpg" alt="User" /></div>
+                        <div className="imgBx"><img src={props.img} alt="User" /></div>
                         <div className="contentBx">
-                            <h3>Name<br /><span>Position</span></h3>
+                            <h3>Manish Bachhane<br /><span>Backend Developer</span></h3>
                         </div>
                     </div>
                     <ul className="sci">

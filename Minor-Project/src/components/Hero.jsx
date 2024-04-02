@@ -12,6 +12,7 @@ import Team from "./Team/Team"
 import Footer from "./Footer/Footer";
 import Header from "./Header/header";
 import Games from "./Games";
+import img from "../assets/mihir.jpeg"
 
 import anime from "animejs";
 
@@ -38,19 +39,19 @@ function Hero() {
     {
       question: "What is this website about ?",
       answer:
-        "This website is an open-source community platform designed for cybersecurity enthusiasts. It serves as a hub for like-minded individuals to collaborate, share knowledge, and engage in discussions related to cybersecurity.",
+        "This website is about phising attack detection, our goal is to minimize the phishing attack that is increasing day by day.",
       isOpen: false,
     },
     {
       question: "Can I contribute to the website's content ?",
       answer:
-        "Absolutely! We encourage active participation from our members. You can contribute by writing articles, sharing your research, or even helping with website development if you have the skills.",
+        "Absolutely! We encourage active participation from everyone. You can contribute in website development if you have the skills.",
       isOpen: false,
     },
     {
       question: "Is this website free to use ?",
       answer:
-        "Yes, our platform is entirely open-source and free to use. We believe in making cybersecurity knowledge accessible to everyone.",
+        "Yes, our platform is entirely open-source and free to use. Our goal is to spread awareness and towards phising attacks and other cyber security threads.",
       isOpen: false,
     },
   ]);
@@ -70,9 +71,9 @@ function Hero() {
           <div className="hero-text">
 
             <h1>CyberSphere</h1>
-            <p>Welcome to CyberCell GU, where we ignite Cybersecurity Awareness and Innovation. Join us in safeguarding the digital realm through cutting-edge events and initiatives. Our diverse team of dreamers, thinkers, and doers is united by a singular purpose to make the world better through knowledge. Join us today!</p>
+            <p>Cyber Sphere employs advanced machine learning techniques to swiftly detect and prevent phishing attacks. Our platform analyzes user behavior, identifying suspicious activities to ensure robust cybersecurity protection for online environments.</p>
             <div className="button">
-          <div className="explore">Explore More</div>
+          <div className="explore">Add  Extension</div>
         </div>
 
            
@@ -162,7 +163,7 @@ function Hero() {
 
         <div className="link-container flex justify-center flex-col items-center mb-4">
          <div className="title1">
-         <h1 className="title1 text-center text-4xl mb-10">
+         <h1 className="title1 text-center text-4xl mb-10 font-bold">
          You can run a test on the link below
          </h1>
          </div>
@@ -229,7 +230,7 @@ function Hero() {
         
 
         <div id = "about" className="about">
-         <Team/>
+         <Team img={img}/>
         </div>
 
         <div className="faq-container">
