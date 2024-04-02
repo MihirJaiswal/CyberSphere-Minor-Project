@@ -103,10 +103,11 @@ function Hero() {
 
           <div className="data">
           <div className="data-img">
-            <img src="https://www.shutterstock.com/image-vector/event-schedule-icon-260nw-606709283.jpg" alt="" />
+            <img src="https://static.vecteezy.com/system/resources/previews/005/005/794/non_2x/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" alt="" />
           </div>
            <div>
            <h1>
+           
               <CountUp start={0} end={5} duration={2} delay={0}/>
             </h1>
             <p>Conducted</p>
@@ -114,14 +115,14 @@ function Hero() {
           </div>
           <div className="data">
           <div className="data-img">
-            <img src="https://static.vecteezy.com/system/resources/previews/005/005/794/non_2x/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" alt="" />
+            <img src="https://www.shutterstock.com/image-vector/event-schedule-icon-260nw-606709283.jpg" alt="" />
           </div>
             <div>
             <h1>
-            <CountUp start={0} end={50} duration={5} delay={0}/>
+            <CountUp start={0} end={30000} duration={5} delay={0}/>
             +
             </h1>
-            <p>Members</p>
+            <p>Dataset</p>
             </div>
           </div>
           <div className="data">
@@ -130,7 +131,7 @@ function Hero() {
           </div>
             <div>
             <h1>
-              2020
+              2024
             </h1>
             <p>Established</p>
             </div>

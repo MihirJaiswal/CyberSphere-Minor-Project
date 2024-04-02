@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 40px ;
     margin-bottom: 40px;
 }
 .container .card
@@ -22,7 +21,7 @@
     position: relative;
     width: 300px;
     height: 400px;
-    margin:30px;
+    margin:0 30px;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(191, 178, 178, 0.2);
     border-radius: 15px;

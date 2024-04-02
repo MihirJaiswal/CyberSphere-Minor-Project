@@ -16,8 +16,8 @@ function Team({ images }) {
     return (
         <div>
             <section className='mt-12'>
-                <h2 className='text-center text-4xl md:text-5xl font-bold text-white mb-2 md:mb-6 text-main'>Meet Our Team</h2>
-                <div className="container flex flex-col md:flex-row flex-wrap justify-center items-center mx-auto mt-4 md:mt-12">
+                <h2 className='text-center text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 text-main'>Meet Our Team</h2>
+                <div className="container flex flex-col md:flex-row flex-wrap justify-center items-center mx-auto mt-10 md:mt-12">
                     {teamMembers.map((member, index) => (
                         <div key={index}>
                             <div className="card card-1 ">
