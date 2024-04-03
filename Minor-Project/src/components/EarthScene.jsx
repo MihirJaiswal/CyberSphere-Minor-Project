@@ -18,7 +18,7 @@ function EarthScene() {
   useEffect(() => {
     // Earth texture
     const earthTexture = new THREE.TextureLoader().load(
-      "https://i.postimg.cc/ry0pcyyZ/earth.jpg"
+      "https://i.ibb.co/RcGTS2j/map.jpg"
     );
     const earthGeometry = new THREE.SphereGeometry(30, 32, 32);
     const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture });

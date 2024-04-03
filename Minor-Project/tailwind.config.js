@@ -6,7 +6,16 @@ export default {
   ],
   theme: {
     colors: {
-      'main': '#F442FB'
+      'main': '#F442FB',
+      'flower': '#d10863',
+      'bg':'#101010'
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
     extend: {},
   },
