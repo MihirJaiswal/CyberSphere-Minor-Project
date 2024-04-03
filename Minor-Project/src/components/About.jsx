@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import CodeRain from './CodeRain';
 import Header from './Header/header';
 import EarthScene from './EarthScene';
@@ -61,7 +62,7 @@ function About() {
                       </ul>
                     </div>
                   </div>
-                  <div className="bg-white rounded-lg shadow-lg p-8">
+                  <div className="bg-white rounded-lg shadow-lg md:p-8">
                     <div className="relative overflow-hidden">
                       <img className="object-cover w-full h-full" src="https://i.ibb.co/3MHSpCx/images.png" alt="Product" />
                       <div className="absolute inset-0 bg-black opacity-40"></div>
@@ -77,7 +78,7 @@ function About() {
                       </ul>
                     </div>
                   </div>
-                  <div className="bg-white rounded-lg shadow-lg p-8">
+                  <div className="bg-white rounded-lg shadow-lg md:p-8">
                     <div className="relative overflow-hidden">
                       <img className="object-cover w-full h-full" src="https://i.ibb.co/qWHk1QJ/img01-1.png" alt="Product" />
                       <div className="absolute inset-0 bg-black opacity-40"></div>
@@ -99,28 +100,18 @@ function About() {
 
         <div className="bg-gray-800 py-16">
           <div className="container mx-auto">
-            <h1 className="text-5xl text-center text-white font-bold mb-8">Wants to contribute?</h1>
-            <p className="text-xl text-center text-white mb-8">We're always looking for passionate contributors to help us grow! Join us in our journey to make technology accessible for everyone.</p>
+            <h1 className="text-2xl md:text-5xl text-center text-white font-bold mb-0 md:mb-8">Wants to contribute?</h1>
+            <p className="md:text-xl text-base text-center text-white mb-8">We're always looking for passionate contributors to help us grow! Join us in our journey to make technology accessible for everyone.</p>
             <div className="flex justify-center">
-              <div className="max-w-xs rounded overflow-hidden shadow-lg bg-white mx-4 flex flex-col justify-center items-center">
-                <img className="w-40" src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" alt="GitHub Icon" />
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-center">Project 1</div>
-                  <p className="text-gray-700 text-base text-center">A brief description of the project goes here.</p>
-                </div>
-                <div className="px-6 pt-4 pb-2">
-                  <a href="https://github.com/yourusername/project1" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View on GitHub</a>
-                </div>
-              </div>
-              <div className="max-w-xs rounded overflow-hidden shadow-lg bg-white mx-4 flex flex-col justify-center items-center">
-                <img className="w-40 " src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" alt="GitHub Icon" />
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-center">Project 2</div>
-                  <p className="text-gray-700 text-base text-center">A brief description of the project goes here.</p>
-                </div>
-                <div className="px-6 pt-4 pb-2">
-                  <a href="https://github.com/yourusername/project2" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View on GitHub</a>
-                </div>
+              <div className="flex">
+                <a href="https://github.com/yourusername/project1" className="text-white bg-blue-500 hover:bg-blue-600 rounded-lg py-3 px-6 mr-4 flex items-center">
+                  
+                  Contribute to Project 1
+                </a>
+                <a href="https://github.com/yourusername/project2" className="text-white bg-blue-500 hover:bg-blue-600 rounded-lg py-3 px-6 flex items-center">
+                  
+                  Contribute to Project 2
+                </a>
               </div>
             </div>
           </div>
