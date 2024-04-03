@@ -248,7 +248,7 @@ function Hero() {
             <Link to="/games">
             <button className="btn">
               <span className="btn__inner">
-                <span className="btn__slide" style={{ backgroundColor: "#E924EF" }}></span>
+                <span className="btn__slide" style={{ backgroundColor: "#750475" }}></span>
                 <span className="btn__content">Click Here</span>
               </span>
             </button>
