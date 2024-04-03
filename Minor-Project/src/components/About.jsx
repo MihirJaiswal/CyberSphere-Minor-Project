@@ -30,9 +30,9 @@ function About() {
 
           </div>
           </div>
-          <>
+          <div className='absolute' style={{ left: 0 }}>
             <EarthScene />
-          </>
+          </div>
       <div className='w-1/2'>
      <div className='hero-text'>
      <h1>Open Source</h1>
