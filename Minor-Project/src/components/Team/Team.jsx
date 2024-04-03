@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Team.css";
+import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
+
 
 function Team({ images }) {
 
@@ -15,7 +17,7 @@ function Team({ images }) {
 
     return (
         <div>
-            <section className='mt-12'>
+            <section className='mt-12' style={{ marginBottom: '90px' }}>
                 <h2 className='text-center text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6 text-main'>Meet Our Team</h2>
                 <div className="container flex flex-col md:flex-row flex-wrap justify-center items-center mx-auto mt-10 md:mt-12">
                     {teamMembers.map((member, index) => (
@@ -27,17 +29,19 @@ function Team({ images }) {
                                         <h3>{member.name}<br /><span>{member.role}</span></h3>
                                     </div>
                                 </div>
-                                <ul className="sci">
-                                    <li style={{ '--i': 1 }}>
-                                        <a href="#"><i className="bi bi-facebook"></i></a>
-                                    </li>
-                                    <li style={{ '--i': 2 }}>
-                                        <a href="#"><i className="bi bi-twitter"></i></a>
-                                    </li>
-                                    <li style={{ '--i': 3 }}>
-                                        <a href="#"><i className="bi bi-instagram"></i></a>
-                                    </li>
-                                </ul>
+                               
+                               <ul className="sci">
+    <li style={{ '--i': 1 }}>
+        <a href="#"><FaLinkedin /></a>
+    </li>
+    <li style={{ '--i': 2 }}>
+        <a href="#"><FaGithub /></a>
+    </li>
+    <li style={{ '--i': 3 }}>
+        <a href="#"><FaInstagram /></a>
+    </li>
+</ul>
+
                             </div>
                         </div>
                     ))}

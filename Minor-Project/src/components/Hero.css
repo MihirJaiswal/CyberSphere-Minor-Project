@@ -379,7 +379,7 @@ canvas {
   font-family: "Orbitron", sans-serif;
   /* background-color: #00000080; */
   color: white;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px;
   width: 80%; /* Adjust the width to your preference */
 }
@@ -836,7 +836,7 @@ canvas {
 }
 
 .subtn{
-  background-color: #de39d6;
+  background-color: #df1dc5;
   position: absolute;
   top: 0;
   right: 0;

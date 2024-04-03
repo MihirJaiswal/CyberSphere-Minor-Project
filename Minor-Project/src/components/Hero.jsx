@@ -103,14 +103,14 @@ function Hero() {
 
           <div className="data">
           <div className="data-img">
-            <img src="https://static.vecteezy.com/system/resources/previews/005/005/794/non_2x/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" alt="" />
+            <img src="https://superawesomevectors.com/wp-content/uploads/2016/02/desktop-computer-with-screen-vector-icon-800x566.jpg" alt="" />
           </div>
            <div>
            <h1>
            
-              <CountUp start={0} end={5} duration={2} delay={0}/>
+              <CountUp start={0} end={5} duration={3} delay={0}/>
             </h1>
-            <p>Conducted</p>
+            <p>Algorithms</p>
            </div> 
           </div>
           <div className="data">
@@ -241,7 +241,7 @@ function Hero() {
          <Team images={images}/>
         </div>
 
-        <div className="faq-container">
+        <div className="faq-container mt-10">
   <h1>Frequently Asked Questions</h1>
   <ul className="faq-list">
     {faqs.map((faq, index) => (
