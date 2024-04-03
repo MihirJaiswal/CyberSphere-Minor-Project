@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 
+
+
 function EarthScene() {
   const canvasRef = useRef(null);
   const scene = useRef(new THREE.Scene());

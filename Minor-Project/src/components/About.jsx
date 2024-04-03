@@ -18,6 +18,7 @@ function About() {
     <>
       <CodeRain Color={color}/>
       <Header updateColor={updateColor} />
+      <div>
       <div className='flex flex-col md:flex-row gap-24'>
       <div className='w-1/2'>
       <div className="hero-text">
@@ -44,7 +45,11 @@ function About() {
 </div>
           
   </div>
-            
+
+  <div>
+    
+  </div>
+  </div>   
           
        
   </>
