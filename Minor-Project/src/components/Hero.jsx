@@ -16,8 +16,8 @@ import img from "../assets/mihir.jpeg"
 import img1 from "../assets/kuldeep.jpg"
 import img2 from "../assets/krishna.jpeg"
 import img3 from "../assets/manish.jpg"
-
 import anime from "animejs";
+
 
 
 function Hero() {
@@ -284,7 +284,6 @@ function Hero() {
 </div>
  
       </div>
-
 
 
       <Footer />

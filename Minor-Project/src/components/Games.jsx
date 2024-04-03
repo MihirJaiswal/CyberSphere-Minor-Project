@@ -2,14 +2,14 @@ import "./Games.css";
 import img from "../assets/a-co.png";
 import img2 from "../assets/a-cool-modern-animated-.png";
 import img3 from "../assets/g.png";
-
 import { useEffect } from "react";
-import CLOUDS from 'vanta/src/vanta.dots'
+import CLOUDS from 'vanta/src/vanta.dots';
 
 function Game() {
-   useEffect(()=>{
-    CLOUDS({
-      el:'#vanta',
+  useEffect(() => {
+    // Define cloudsEffect variable to hold the Vanta.js effect instance
+    const cloudsEffect = CLOUDS({
+      el: '#vanta',
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
@@ -22,9 +22,16 @@ function Game() {
       size: 10.00,
       spacing: 24.00,
       showLines: false
-      
-     })
-   },[])
+    });
+
+    // Cleanup function
+    return () => {
+      // Check if cloudsEffect is defined before calling destroy()
+      if (cloudsEffect) cloudsEffect.destroy();
+    };
+  }, []);
+
+
 
   return (
     <>

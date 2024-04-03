@@ -26,7 +26,7 @@ const Header = ({ updateColor }) => {
           </li>
     
           <li>
-            <HashLink to="/#about">Team</HashLink>
+            <HashLink to="/about">About</HashLink>
           </li>
 
           
