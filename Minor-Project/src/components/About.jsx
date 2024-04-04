@@ -6,6 +6,7 @@ import EarthScene from './EarthScene';
 import "./About.css";
 import Footer from './Footer/Footer';
 import CustomCard from './CustomCard';
+import { FaGithub } from 'react-icons/fa';
 
 function About() {
   const [color, setColor] = useState("#BB0E5C");
@@ -43,10 +44,10 @@ function About() {
       <div className='bg-bg mt-20'>
         <h1 className='text-5xl font-bold text-center mt-64 mb-12'>Tech Stack</h1>
       </div>
-      <div className='mb-2  text-3xl font-bold flex flex-col md:flex-row gap-6  justify-center items-center'>
+      <div className='mb-2  text-3xl font-bold flex flex-col md:flex-row gap-6  justify-center'>
         <CustomCard
           imageUrl="https://i.ibb.co/9wvF41N/machine-learning-examples-applications.png"
-          hoverImageUrl="https://i.ibb.co/9wvF41N/machine-learning-examples-applications.png"
+          hoverImageUrl="https://i.ibb.co/WP5MGTn/0-f-q-QPFpdof-WGLQqc-1-1.png"
           title="Machine Learning"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
           technologies={['XGBoost', 'Random Forest', 'Decision Tree', 'Support Vector Machine(SVM)']}
@@ -60,8 +61,8 @@ function About() {
         />
         <CustomCard
           imageUrl="https://i.ibb.co/qWHk1QJ/img01-1.png"
-          hoverImageUrl="https://i.ibb.co/qWHk1QJ/img01-1.png"
-          title="Product Name"
+          hoverImageUrl="https://i.ibb.co/nRcCwgV/https-dev-to-uploads-s3-amazonaws-com-uploads-articles-2sxlwy7jsdp9zl5uakfb-1.png"
+          title="Backennd"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
           technologies={['Django', 'Flask']}
         />
@@ -75,13 +76,15 @@ function About() {
             <p className="md:text-xl text-base text-center text-white mb-8">We're always looking for passionate contributors to help us grow! Join us in our journey to make technology accessible for everyone.</p>
             <div className="flex justify-center">
               <div className="flex">
+              
                 <a href="https://github.com/yourusername/project1" className="text-white bg-blue-500 hover:bg-blue-600 rounded-lg py-3 px-6 mr-4 flex items-center">
-                  
-                  Contribute to Project 1
+                <FaGithub className="text-3xl mr-4 text-white"/>
+                  Machine learning model
                 </a>
-                <a href="https://github.com/yourusername/project2" className="text-white bg-blue-500 hover:bg-blue-600 rounded-lg py-3 px-6 flex items-center">
-                  
-                  Contribute to Project 2
+           
+                <a href="https://github.com/yourusername/project2" className="text-white bg-blue-500 hover:bg-blue-600 rounded-lg py-3 px-8 flex items-center">
+                <FaGithub className="text-3xl mr-4 text-white"/>
+                  CyberSphere web
                 </a>
               </div>
             </div>
