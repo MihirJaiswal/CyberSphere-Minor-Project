@@ -17,7 +17,7 @@ import img1 from "../assets/kuldeep.jpg"
 import img2 from "../assets/krishna.jpeg"
 import img3 from "../assets/manish.jpg"
 import anime from "animejs";
-
+import { FaBroom } from 'react-icons/fa';
 
 
 function Hero() {
@@ -231,7 +231,7 @@ function Hero() {
       style={{ color: 'black' }}
     />
     <button type="submit" className="subtn">Check</button>
-    <button type="button" className="subtn" onClick={handleClear} style={{position: 'absolute', top: '26px', right: '-110px', transform: 'translateY(-50%)'}}>Clear</button> {/* Add clear button */}
+    <button type="button" className="text-white font-bold py-2 px-4 rounded-3xl mr-6 mb-4 " onClick={handleClear} style={{position: 'absolute', top: '0', right: '-110px'}}> <FaBroom className="text-4xl mr-4 text-white"/>  </button> {/* Add clear button */}
   </div>
 </form>
 
