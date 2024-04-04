@@ -44,7 +44,7 @@ function About() {
       <div className='bg-bg mt-20'>
         <h1 className='text-5xl font-bold text-center mt-64 mb-12'>Tech Stack</h1>
       </div>
-      <div className='mb-2  text-3xl font-bold flex flex-col md:flex-row gap-6  justify-center'>
+      <div className='mb-2  text-3xl font-bold flex flex-col md:flex-row justify-center'>
         <CustomCard
           imageUrl="https://i.ibb.co/9wvF41N/machine-learning-examples-applications.png"
           hoverImageUrl="https://i.ibb.co/L9GhP3H/655c9a94f6b8feca172f5545-qwak-xgboost-random-forest-4-1-1.webp"
@@ -54,7 +54,7 @@ function About() {
         />
         <CustomCard
           imageUrl="https://i.ibb.co/3MHSpCx/images.png"
-          hoverImageUrl="https://i.ibb.co/t89tpVx/frontend-1-2.png"
+          hoverImageUrl="https://i.ibb.co/LpwYgWh/Untitled-design.png"
           title="Frontend"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
           technologies={['React', 'Three.js', 'Tailwindcss', 'Vite']}
