@@ -5,6 +5,7 @@ import Header from './Header/header';
 import EarthScene from './EarthScene';
 import "./About.css";
 import Footer from './Footer/Footer';
+import CustomCard from './CustomCard';
 
 function About() {
   const [color, setColor] = useState("#BB0E5C");
@@ -39,66 +40,36 @@ function About() {
         </div>
 
         <div className='bg-bg mt-20 mb-10'>
-          <div className='bg-bg mt-20'>
-            <h1 className='text-5xl font-bold text-center mt-60 mb-12'>Tech Stack</h1>
-          </div>
-          <div className='mb-2  text-3xl font-bold flex flex-col md:flex-row gap-32  justify-center '>
-            <div className="bg-gray-900  px-8">
-              <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div className="bg-white rounded-lg shadow-lg md:p-8">
-                    <div className="relative overflow-hidden">
-                      <img className="object-cover w-full h-full" src="https://i.ibb.co/9wvF41N/machine-learning-examples-applications.png" alt="Product" />
-                      <div className="absolute inset-0 bg-black opacity-40"></div>
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mt-4">Machine Learning</h3>
-                    <p className="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
-                    <div className="flex items-center justify-between mt-4">
-                      <ul className='list-disc text-gray-900 font-bold text-base ml-4'>
-                        <li>XGBoost</li>
-                        <li>Random Forest</li>
-                        <li>Decision Tree</li>
-                        <li>Support Vector Machine(SVM)</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg shadow-lg md:p-8">
-                    <div className="relative overflow-hidden">
-                      <img className="object-cover w-full h-full" src="https://i.ibb.co/3MHSpCx/images.png" alt="Product" />
-                      <div className="absolute inset-0 bg-black opacity-40"></div>
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mt-4">Frontend</h3>
-                    <p className="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
-                    <div className="flex items-center justify-between mt-4">
-                      <ul className='list-disc text-gray-900 font-bold text-base ml-4'>
-                        <li>React</li>
-                        <li>Three.js</li>
-                        <li>Tailwindcss</li>
-                        <li>Vite</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg shadow-lg md:p-8">
-                    <div className="relative overflow-hidden">
-                      <img className="object-cover w-full h-full" src="https://i.ibb.co/qWHk1QJ/img01-1.png" alt="Product" />
-                      <div className="absolute inset-0 bg-black opacity-40"></div>
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mt-4">Product Name</h3>
-                    <p className="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt.</p>
-                    <div className="flex items-center justify-between mt-4">
-                      <ul className='list-disc text-gray-900 font-bold text-base ml-4'>
-                        <li>Django</li>
-                        <li>Flask</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className='bg-bg mt-20'>
+        <h1 className='text-5xl font-bold text-center mt-64 mb-12'>Tech Stack</h1>
+      </div>
+      <div className='mb-2  text-3xl font-bold flex flex-col md:flex-row gap-6  justify-center items-center'>
+        <CustomCard
+          imageUrl="https://i.ibb.co/9wvF41N/machine-learning-examples-applications.png"
+          hoverImageUrl="https://i.ibb.co/9wvF41N/machine-learning-examples-applications.png"
+          title="Machine Learning"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
+          technologies={['XGBoost', 'Random Forest', 'Decision Tree', 'Support Vector Machine(SVM)']}
+        />
+        <CustomCard
+          imageUrl="https://i.ibb.co/3MHSpCx/images.png"
+          hoverImageUrl="https://i.ibb.co/t89tpVx/frontend-1-2.png"
+          title="Frontend"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
+          technologies={['React', 'Three.js', 'Tailwindcss', 'Vite']}
+        />
+        <CustomCard
+          imageUrl="https://i.ibb.co/qWHk1QJ/img01-1.png"
+          hoverImageUrl="https://i.ibb.co/qWHk1QJ/img01-1.png"
+          title="Product Name"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
+          technologies={['Django', 'Flask']}
+        />
+      </div>
+    </div>
 
-        <div className="bg-gray-800 py-16">
+
+        <div className="bg-gray-800 py-10">
           <div className="container mx-auto">
             <h1 className="text-2xl md:text-5xl text-center text-white font-bold mb-0 md:mb-8">Wants to contribute?</h1>
             <p className="md:text-xl text-base text-center text-white mb-8">We're always looking for passionate contributors to help us grow! Join us in our journey to make technology accessible for everyone.</p>
