@@ -27,9 +27,9 @@ const CustomCard = ({ imageUrl, hoverImageUrl, title, description, technologies 
       </div>
       <div className="bg-gradient-to-t from-transparent to-black opacity-0 hover:opacity-50 absolute inset-0 rounded-t-lg"></div>
       <h3 className="text-xl font-bold text-gray-900 mt-4">{title}</h3>
-      <p className="text-gray-500 text-sm mt-2">{description}</p>
+      <p className="text-gray-500 text-text text-sm mt-2">{description}</p>
       <div className="flex items-center justify-between mt-4">
-        <ul className='list-disc ml-4 text-base'>
+        <ul className='list-disc ml-4 text-base text-text '>
           {technologies.map((tech, index) => (
             <li key={index}>{tech}</li>
           ))}

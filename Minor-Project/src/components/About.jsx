@@ -73,7 +73,7 @@ function About() {
         <div className="bg-gray-800 py-10">
           <div className="container mx-auto">
             <h1 className="text-2xl md:text-5xl text-center text-white font-bold mb-0 md:mb-8">Wants to contribute?</h1>
-            <p className="md:text-xl text-base text-center text-white mb-8">We're always looking for passionate contributors to help us grow! Join us in our journey to make technology accessible for everyone.</p>
+            <p className="md:text-xl text-base text-center text-text mb-8">We're always looking for passionate contributors to help us grow! Join us in our journey to make technology accessible for everyone.</p>
             <div className="flex justify-center">
               <div className="flex">
               

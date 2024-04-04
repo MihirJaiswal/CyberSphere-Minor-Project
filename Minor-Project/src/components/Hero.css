@@ -854,6 +854,9 @@ canvas {
   cursor: pointer;
 }
 
+.subtn:hover{
+  background-color: #ab0988;
+}
 
 .icn{
   color: #b2abab;

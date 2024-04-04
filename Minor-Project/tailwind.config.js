@@ -8,7 +8,11 @@ export default {
     colors: {
       'main': '#F442FB',
       'flower': '#d10863',
-      'bg':'#101010'
+      'bg':'#101010',
+      'text': '#DAE6F1',
+      'red' : '#C50003',
+      'green': '#00AB2F',
+      'pink' : '#df1dc5',
     },
     screens: {
       'sm': '640px',

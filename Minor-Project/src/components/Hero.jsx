@@ -37,6 +37,14 @@ function Hero() {
   };
 
   const[phishingResult, setPhishingResult] = useState("");
+  const [urlInput, setUrlInput] = useState("");
+
+  const handleClear = () => {
+    // Clear the input box
+    setUrlInput("");
+    // Clear the phishing result
+    setPhishingResult("");
+  };
 
   //members
   const teamMembers = [
@@ -80,7 +88,7 @@ function Hero() {
     const url = e.target.elements.url.value;
 
     try {
-      const response = await fetch('http://127.0.0.1:5000', {
+      const response = await fetch('http://127.0.0.1:5000/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -203,30 +211,33 @@ function Hero() {
          You can run a test on the link below
          </h1>
          </div>
-          <form className="w-full max-w-xl mx-auto" onSubmit={handleSubmit}>   
-      <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-      <div className="relative">
-        <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-          <svg className="icn w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-          </svg>
-        </div>
-        <input
-  type="search"
-  id="default-search"
-  name="url"
-  className="block w-full p-4 ps-10 text-l text-gray-900 border border-gray-600 rounded-lg bg-white-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-gray-900"
-  placeholder="Enter the link"
-  required
-  style={{ color: 'black' }}
-/>
+         <form className="w-full max-w-xl mx-auto" onSubmit={handleSubmit}>   
+  <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+  <div className="relative">
+    <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+      <svg className="icn w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+      </svg>
+    </div>
+    <input
+      type="search"
+      id="default-search"
+      name="url"
+      className="block w-full p-4 ps-10 text-l text-gray-900 border border-gray-600 rounded-lg bg-white-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-gray-900"
+      placeholder="Enter the link"
+      required
+      value={urlInput}
+      onChange={(e) => setUrlInput(e.target.value)}
+      style={{ color: 'black' }}
+    />
+    <button type="submit" className="subtn">Check</button>
+    <button type="button" className="subtn" onClick={handleClear} style={{position: 'absolute', top: '26px', right: '-110px', transform: 'translateY(-50%)'}}>Clear</button> {/* Add clear button */}
+  </div>
+</form>
 
-        <button type="submit" className="subtn">Check</button>
-      </div>
-    </form>
           
-    <div className="w-full mt-16">
-  <h1 className={`text-xl text-center font-bold underline ${phishingResult === 'phishing' ? 'text-red-500' : 'text-green-500'}`}>
+    <div className="w-full mt-10">
+  <h1 className={`text-4xl text-center font-bold  ${phishingResult === 'phishing' ? 'text-red' : 'text-green'}`}>
     {phishingResult !== '' ? (phishingResult === 'phishing' ? 'Website is phishing' : 'Website is not phishing') : ''}
   </h1>          
 </div>
