@@ -80,7 +80,7 @@ function Hero() {
     const url = e.target.elements.url.value;
 
     try {
-      const response = await fetch('http://your-api-url/check-phishing', {
+      const response = await fetch('http://127.0.0.1:5000', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -211,7 +211,16 @@ function Hero() {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
           </svg>
         </div>
-        <input type="search" id="default-search" className="block w-full p-4 ps-10 text-l text-gray-900 border border-gray-600 rounded-lg bg-white-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-gray-900" placeholder="Enter the link" required style={{color: 'black'}} />
+        <input
+  type="search"
+  id="default-search"
+  name="url"
+  className="block w-full p-4 ps-10 text-l text-gray-900 border border-gray-600 rounded-lg bg-white-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-gray-900"
+  placeholder="Enter the link"
+  required
+  style={{ color: 'black' }}
+/>
+
         <button type="submit" className="subtn">Check</button>
       </div>
     </form>

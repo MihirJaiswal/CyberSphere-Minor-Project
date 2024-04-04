@@ -4,9 +4,14 @@ import icon from "../../assets/hacker.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-
 const Header = ({ updateColor }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const getRandomColor = () => {
+    const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    return randomColor;
+  };
+
   return (
     <div className="header">
       <a href="/">
@@ -20,22 +25,17 @@ const Header = ({ updateColor }) => {
           <li>
             <HashLink to="/about">About</HashLink>
           </li>
-
           <li>
-          
             <Link to="/games">Games</Link>
           </li>
-    
-          
-          
-
           <img
             style={{ cursor: "pointer" }}
             width={35}
             src={icon}
             alt="Hacker Icon"
             onClick={() => {
-              updateColor("green");
+              const randomColor = getRandomColor();
+              updateColor(randomColor);
             }}
           />
         </ul>
@@ -46,4 +46,5 @@ const Header = ({ updateColor }) => {
     </div>
   );
 };
+
 export default Header;
