@@ -47,13 +47,13 @@ function About() {
       <div className='mb-2  text-3xl font-bold flex flex-col md:flex-row justify-center'>
         <CustomCard
           imageUrl="https://i.ibb.co/9wvF41N/machine-learning-examples-applications.png"
-          hoverImageUrl="https://i.ibb.co/L9GhP3H/655c9a94f6b8feca172f5545-qwak-xgboost-random-forest-4-1-1.webp"
+          hoverImageUrl="https://i.ibb.co/VwXmnFy/Untitled-design-2.png"
           title="Machine Learning"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
-          technologies={['XGBoost', 'Random Forest', 'Decision Tree', 'Support Vector Machine(SVM)']}
+          technologies={['XGBoost', 'Random Forest', 'Support Vector Machine(SVM)', 'Decision Tree']}
         />
         <CustomCard
-          imageUrl="https://i.ibb.co/3MHSpCx/images.png"
+          imageUrl="https://i.ibb.co/vc7VZR1/Untitled-design-4.png"
           hoverImageUrl="https://i.ibb.co/LpwYgWh/Untitled-design.png"
           title="Frontend"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
@@ -61,8 +61,8 @@ function About() {
         />
         <CustomCard
           imageUrl="https://i.ibb.co/qWHk1QJ/img01-1.png"
-          hoverImageUrl="https://i.ibb.co/nRcCwgV/https-dev-to-uploads-s3-amazonaws-com-uploads-articles-2sxlwy7jsdp9zl5uakfb-1.png"
-          title="Backennd"
+          hoverImageUrl="https://i.ibb.co/2jChWD5/Untitled-design-1.png"
+          title="Backend"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
           technologies={['Django', 'Flask']}
         />
