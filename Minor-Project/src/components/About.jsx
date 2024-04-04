@@ -47,7 +47,7 @@ function About() {
       <div className='mb-2  text-3xl font-bold flex flex-col md:flex-row gap-6  justify-center'>
         <CustomCard
           imageUrl="https://i.ibb.co/9wvF41N/machine-learning-examples-applications.png"
-          hoverImageUrl="https://i.ibb.co/WP5MGTn/0-f-q-QPFpdof-WGLQqc-1-1.png"
+          hoverImageUrl="https://i.ibb.co/L9GhP3H/655c9a94f6b8feca172f5545-qwak-xgboost-random-forest-4-1-1.webp"
           title="Machine Learning"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt."
           technologies={['XGBoost', 'Random Forest', 'Decision Tree', 'Support Vector Machine(SVM)']}
