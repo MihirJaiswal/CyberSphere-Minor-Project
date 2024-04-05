@@ -24,14 +24,14 @@ function Games() {
           imgSrc='https://static.displate.com/324x454/displate/2023-03-13/d73fb48613893e90ce98c9746a4f77bf_5e5bba8a9994f568c8920f944e586556.avif'
           title="QUIZ FOR GEEKS"
           subtitle="CyberSphere"
-          playLink="#"
+          playLink="https://mihirjaiswal.github.io/quizgame/index.html"
         />
         <GameCard
           imgSrc2='https://s25.postimg.cc/hj4c4qnov/cta-3.png'
           imgSrc='https://static.displate.com/324x454/displate/2021-12-07/87f1d7e216783272c4c3601a622e2beb_f14d431f15ca41b88b6565449df15261.avif'
           title="WORD SCRAMBLE"
           subtitle="CyberShpere"
-          playLink="#"
+          playLink="https://basicgame.vercel.app/"
         />
         <GameCard
           imgSrc2='https://s25.postimg.cc/l2q9ujy4f/cta-4.png'

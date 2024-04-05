@@ -97,7 +97,7 @@ function Hero() {
       });
       
       const data = await response.json();
-      setPhishingResult(data.result);
+      setPhishingResult(data.prediction);
 
       
     } catch (error) {
@@ -237,8 +237,8 @@ function Hero() {
 
           
     <div className="w-full mt-10">
-  <h1 className={`text-4xl text-center font-bold  ${phishingResult === 'phishing' ? 'text-red' : 'text-green'}`}>
-    {phishingResult !== '' ? (phishingResult === 'phishing' ? 'Website is phishing' : 'Website is not phishing') : ''}
+  <h1 className={`text-4xl text-center font-bold  ${phishingResult === 'safe' ? 'text-green' : 'text-red'}`}>
+    {phishingResult !== '' ? (phishingResult === 'safe' ? 'Website is not phising' : 'Website is phishing') : ''}
   </h1>          
 </div>
 
