@@ -29,7 +29,7 @@ function Games() {
         <GameCard
           imgSrc2='https://s25.postimg.cc/hj4c4qnov/cta-3.png'
           imgSrc='https://static.displate.com/324x454/displate/2021-12-07/87f1d7e216783272c4c3601a622e2beb_f14d431f15ca41b88b6565449df15261.avif'
-          title="WORD SCRAMBLE"
+          title="CyberEvil"
           subtitle="CyberShpere"
           playLink="https://basicgame.vercel.app/"
         />
