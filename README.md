@@ -1,8 +1,10 @@
-# CyberSphere: Phishing Website Detector
+![Screecyber](https://github.com/MihirJaiswal/minorproject/assets/137146214/b3298194-bd26-4682-888b-1835a82db3c4)# CyberSphere: Phishing Website Detector
 
 CyberSphere is a browser extension and website designed to detect phishing attacks using machine learning techniques. The system is built using React.js, Three.js, Tailwind CSS for the frontend, and vanilla JavaScript for the extension. The machine learning models are trained using XGBoost, Random Forest, Decision Tree, and SVM algorithms.
 
-![Uploading Screecyber.png…]()
+
+
+![Screecyber](https://github.com/MihirJaiswal/minorproject/assets/137146214/62a75652-d61b-4cfb-9202-c482c4216231)
 
 
 ## Features
