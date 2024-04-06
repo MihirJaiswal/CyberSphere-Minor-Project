@@ -2,7 +2,8 @@
 
 CyberSphere is a browser extension and website designed to detect phishing attacks using machine learning techniques. The system is built using React.js, Three.js, Tailwind CSS for the frontend, and vanilla JavaScript for the extension. The machine learning models are trained using XGBoost, Random Forest, Decision Tree, and SVM algorithms.
 
-![CyberSphere](https://i.ibb.co/DC2bxkG/Screecyber.png)
+![Uploading Screecyber.png…]()
+
 
 ## Features
 
