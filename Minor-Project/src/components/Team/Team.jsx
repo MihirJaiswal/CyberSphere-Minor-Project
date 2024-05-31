@@ -10,8 +10,8 @@ function Team({ images }) {
     const teamMembers = [
         { name: 'Mihir Jaiswal', photo: img, role: 'Frontend and Integration' },
         { name: 'Kuldeep Verma', photo: img1, role: 'Machine Learning' },
-        { name: 'Krishna Vasuniya', photo: img2, role: 'UI/UX Designer' },
-        { name: 'Manish Bachhane', photo: img3, role: 'Backend Developer' }
+   /*      { name: 'Krishna Vasuniya', photo: img2, role: 'UI/UX Designer' },
+        { name: 'Manish Bachhane', photo: img3, role: 'Backend Developer' } */
     ];
 
 
