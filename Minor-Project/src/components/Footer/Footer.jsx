@@ -4,7 +4,7 @@ import Logo from "./../../assets/cybercelllogoo.png";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className="footer-container bg-black">
       <div className="footer">
         <div className="logo-name">
           <a href="/">
@@ -13,7 +13,7 @@ function Footer() {
           CyberSphere
         </div>
         <div>
-          <div className="social-icons flex">
+          <div className="social-icons flex bg-black">
             <a href="#" title="facebook">
               {/* <i className="fa fa-facebook-square" aria-hidden="true"></i> */}
               <svg

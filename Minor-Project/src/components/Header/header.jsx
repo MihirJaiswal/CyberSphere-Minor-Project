@@ -3,34 +3,37 @@ import logo from "../../assets/cybercelllogoo.png";
 import icon from "../../assets/hacker.png";
 
 const Header = ({ updateColor }) => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
   const getRandomColor = () => {
     const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     return randomColor;
   };
 
   return (
-    <div className="header">
+    <div className="header flex items-center justify-between p-4  backdrop-blur-sm  text-white">
       <a href="/">
-        <img width={110} src={logo} alt="cyberSphere" style={{ cursor: "pointer", width: "70px" }}/>
+        <img 
+          width={70} 
+          src={logo} 
+          alt="cyberSphere" 
+          style={{ cursor: "pointer" }} 
+        />
       </a>
-      <div className={`navbar ${navbarOpen ? "active" : ""}`}>
-        <ul>
-          <img
-            style={{ cursor: "pointer" }}
-            width={35}
-            src={icon}
-            alt="Hacker Icon"
-            onClick={() => {
-              const randomColor = getRandomColor();
-              updateColor(randomColor);
-            }}
-          />
-        </ul>
-      </div>
-      <div id="mobile" onClick={() => setNavbarOpen((prev) => !prev)}>
-        <i id="bar" className={navbarOpen ? "fas fa-times" : "fas fa-bars"}></i>
+      <div className="flex items-center gap-4">
+        <img
+          style={{ cursor: "pointer" }}
+          width={35}
+          src={icon}
+          alt="Hacker Icon"
+          onClick={() => {
+            const randomColor = getRandomColor();
+            updateColor(randomColor);
+          }}
+        />
+        <nav className="navbar">
+          <ul className="flex gap-4">
+          
+          </ul>
+        </nav>
       </div>
     </div>
   );

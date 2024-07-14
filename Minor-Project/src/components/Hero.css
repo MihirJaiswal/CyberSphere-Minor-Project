@@ -113,7 +113,7 @@ body {
 }
 
 .hero-text {
-  min-width: 500px;
+  
   font-family: orbitron;
   height: 300px;
   letter-spacing: 2px;
@@ -137,16 +137,7 @@ canvas {
   margin: 50px auto;
   padding-left: 30px;
 }
-.explore {
-  width: 70%;
-  font-size: 100%;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  background-color: rgb(36, 36, 36);
-  border-radius: 3px;
-}
+
 
 .explore:hover {
   opacity: 0.9;
@@ -380,9 +371,10 @@ canvas {
   font-family: "Orbitron", sans-serif;
   /* background-color: #00000080; */
   color: white;
-  margin: 40px auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
-  width: 80%; /* Adjust the width to your preference */
+  width: 90%; /* Adjust the width to your preference */
 }
 
 .faq-container h1 {
@@ -711,14 +703,7 @@ canvas {
     font-size: 12px;
   }
   
-  .hero-data{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    height: 100%;
-  }
+  
   .data{
     display: flex;
     flex-direction: row;

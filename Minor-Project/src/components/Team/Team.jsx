@@ -31,16 +31,16 @@ function Team({ images }) {
                                 </div>
                                
                                <ul className="sci">
-    <li style={{ '--i': 1 }}>
-        <a href="#"><FaLinkedin /></a>
-    </li>
-    <li style={{ '--i': 2 }}>
-        <a href="#"><FaGithub /></a>
-    </li>
-    <li style={{ '--i': 3 }}>
-        <a href="#"><FaInstagram /></a>
-    </li>
-</ul>
+                                <li style={{ '--i': 1 }}>
+                                    <a href="#"><FaLinkedin /></a>
+                                </li>
+                                <li style={{ '--i': 2 }}>
+                                    <a href="#"><FaGithub /></a>
+                                </li>
+                                <li style={{ '--i': 3 }}>
+                                    <a href="#"><FaInstagram /></a>
+                                </li>
+                            </ul>
 
                             </div>
                         </div>
