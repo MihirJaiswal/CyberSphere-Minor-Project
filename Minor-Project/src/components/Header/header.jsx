@@ -1,8 +1,6 @@
 import { useState } from "react";
 import logo from "../../assets/cybercelllogoo.png";
 import icon from "../../assets/hacker.png";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 
 const Header = ({ updateColor }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);

@@ -2,21 +2,16 @@ import "./Hero.css";
 import SphereAnimation from "./SphereAnimation";
 import CodeRain from "./CodeRain";
 import { useState } from "react";
-// import icon from "../assets/hacker.png";
 import { Link } from "react-router-dom";
-
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 import Team from "./Team/Team"
-
 import Footer from "./Footer/Footer";
 import Header from "./Header/header";
-import Games from "./Games";
 import img from "../assets/mihir.jpeg"
 import img1 from "../assets/kuldeep.jpg"
 import img2 from "../assets/krishna.jpeg"
 import img3 from "../assets/manish.jpg"
-import anime from "animejs";
 import { FaBroom } from 'react-icons/fa';
 
 
@@ -265,7 +260,7 @@ function Hero() {
               <p className="text-l md:text-xl text-gray-200 ">At our platform, we're dedicated to raising awareness about phishing attacks and other cybersecurity threats. Through engaging games and quizzes, we provide an interactive learning experience where users can understand the tactics used by cybercriminals and learn how to protect themselves online. Click below to start your cybersecurity journey with our quizzes!</p>
             </div>
             <div>
-            <Link to="/games">
+            <Link to="/">
             <button className="btn">
               <span className="btn__inner">
                 <span className="btn__slide" style={{ backgroundColor: "#750475" }}></span>
