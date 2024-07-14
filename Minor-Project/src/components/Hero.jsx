@@ -12,6 +12,7 @@ import img from "../assets/mihir.jpeg";
 import img1 from "../assets/kuldeep.jpg";
 import img2 from "../assets/krishna.jpeg";
 import img3 from "../assets/manish.jpg";
+import img4 from '../../public/file.jpg'
 import { FaBroom } from 'react-icons/fa';
 import LinkContainer from './LinkContainer';
 import ml from '../../public/machinelearning.svg'
@@ -19,7 +20,7 @@ import db from '../../public/database.svg'
 import tf from '../../public/24.svg'
 import verify from '../../public/verify.svg'
 function Hero() {
-  const images = { img, img1, img2, img3 };
+  const images = { img, img1, img2, img3, img4 };
   const [color, setColor] = useState("purple");
 
   const updateColor = (newColor) => {
