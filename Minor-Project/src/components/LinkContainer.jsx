@@ -45,7 +45,7 @@ const LinkContainer = ({ handleSubmit, urlInput, setUrlInput, handleClear, phish
         </button>
         <button
           type="button"
-          className="absolute top-0 right-20 m-2 px-4 py-2 text-white font-bold rounded-lg hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-800 flex items-center"
+          className="absolute top-0 right-20 m-2 px-4 py-2 text-white font-bold rounded-lg flex items-center"
           onClick={handleClear}
         >
           <FaBroom className="m-2" />

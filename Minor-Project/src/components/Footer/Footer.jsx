@@ -5,7 +5,7 @@ import Logo from "./../../assets/cybercelllogoo.png";
 function Footer() {
   return (
     <div className="footer-container bg-black">
-      <div className="footer">
+      <div className="footer bg-black">
         <div className="logo-name">
           <a href="/">
             <img width={110} src={Logo} alt="CyberCell Logo" />
