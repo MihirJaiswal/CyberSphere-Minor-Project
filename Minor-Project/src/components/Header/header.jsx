@@ -19,15 +19,6 @@ const Header = ({ updateColor }) => {
       </a>
       <div className={`navbar ${navbarOpen ? "active" : ""}`}>
         <ul>
-          <li>
-            <Link to="/">HOME</Link>
-          </li>
-          <li>
-            <HashLink to="/about">About</HashLink>
-          </li>
-          <li>
-            <Link to="/games">Games</Link>
-          </li>
           <img
             style={{ cursor: "pointer" }}
             width={35}
