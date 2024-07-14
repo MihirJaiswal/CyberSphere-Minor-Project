@@ -257,7 +257,7 @@ function Hero() {
 
           <div className="w-full md:w-1/2 text-center flex flex-col">
             <div className=" text-center mb-12 mt-2 md:mt-12 px-6 py-4 md:py-0 md:px-12 border border-gray-600 rounded-lg md:border-0">
-              <p className="text-l md:text-xl text-gray-200 ">At our platform, we're dedicated to raising awareness about phishing attacks and other cybersecurity threats. Through engaging games and quizzes, we provide an interactive learning experience where users can understand the tactics used by cybercriminals and learn how to protect themselves online. Click below to start your cybersecurity journey with our quizzes!</p>
+              <p className="text-l md:text-xl text-gray-200 ">CyberSphere is a browser extension and website designed to detect phishing attacks using machine learning techniques. The system is built using React.js, Three.js, Tailwind CSS for the frontend, and vanilla JavaScript for the extension. The machine learning models are trained using XGBoost, Random Forest, Decision Tree, and SVM algorithms.</p>
             </div>
             <div>
             <Link to="/">
