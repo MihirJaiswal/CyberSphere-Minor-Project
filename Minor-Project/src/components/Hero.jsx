@@ -13,8 +13,11 @@ import img1 from "../assets/kuldeep.jpg";
 import img2 from "../assets/krishna.jpeg";
 import img3 from "../assets/manish.jpg";
 import { FaBroom } from 'react-icons/fa';
-import LinkContainer from './LinkContainer'; // Assuming you have this component
-
+import LinkContainer from './LinkContainer';
+import ml from '../../public/machinelearning.svg'
+import db from '../../public/database.svg'
+import tf from '../../public/24.svg'
+import verify from '../../public/verify.svg'
 function Hero() {
   const images = { img, img1, img2, img3 };
   const [color, setColor] = useState("purple");
@@ -103,17 +106,17 @@ function Hero() {
         </div>
 
         <ScrollTrigger>
-        <div className="p-4 md:p-8 mt-6 mb-12 grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="p-4 md:p-8 mt-6 mb-12 grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4 ">
   {[
     {
-      img: "https://superawesomevectors.com/wp-content/uploads/2016/02/desktop-computer-with-screen-vector-icon-800x566.jpg",
+      img: ml,
       end: 5,
       color: "text-blue-600",
       label: "Algorithms",
       duration: 3,
     },
     {
-      img: "https://www.shutterstock.com/image-vector/event-schedule-icon-260nw-606709283.jpg",
+      img: db,
       end: 30000,
       color: "text-green-600",
       label: "Dataset",
@@ -121,13 +124,13 @@ function Hero() {
       suffix: "+",
     },
     {
-      img: "https://cdn.vectorstock.com/i/preview-lt/97/98/established-vector-42209798.webp",
+      img: verify,
       end: 2024,
       color: "text-purple-600",
       label: "Established",
     },
     {
-      img: "https://img.freepik.com/premium-vector/247-hours-timer-symbol-black-color-flat-style_824631-673.jpg",
+      img: tf,
       end: "24/7",
       color: "text-red-600",
       label: "24/7 Support",
@@ -135,10 +138,10 @@ function Hero() {
   ].map(({ img, end, color, label, duration = 3, suffix = "" }, index) => (
     <div
       key={index}
-      className="bg-white flex flex-col md:flex-row items-center justify-around py-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+      className="bg-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 md:bg-opacity-100 flex flex-col md:flex-row items-center justify-around py-4 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
     >
       <div className="w-20 h-20 mb-4 flex items-center justify-center">
-        <img src={img} alt={`${label} Icon`} className="w-full h-full object-contain rounded-lg" />
+        <img src={img} alt={`${label} Icon`} className="w-full h-full object-contain rounded-lg border border-white p-2 bg-white" />
       </div>
       <div className="text-center">
         <h1 className={`text-2xl md:text-4xl font-bold ${color}`}>
@@ -149,7 +152,7 @@ function Hero() {
           )}
           {suffix}
         </h1>
-        <p className="text-sm md:text-lg font-medium text-gray-700 mt-2">{label}</p>
+        <p className="text-sm md:text-lg font-medium text-gray-100 md:text-gray-700 mt-2">{label}</p>
       </div>
     </div>
   ))}
