@@ -5,11 +5,11 @@ import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 
 function Team({ images }) {
 
-    const { img, img1, img2, img3 } = images;
+    const { img, img1, img2, img3, img4 } = images;
 
     const teamMembers = [
         { name: 'Mihir Jaiswal', photo: img, role: 'Frontend and Integration' },
-        { name: 'Kuldeep Verma', photo: img1, role: 'Machine Learning' },
+        { name: 'Kuldeep Verma', photo: img4, role: 'Machine Learning' },
     ];
 
 
